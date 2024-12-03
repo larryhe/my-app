@@ -1,6 +1,6 @@
 import { render, screen } from "@testing-library/react";
 import { formatDate, formatDollar } from "@/utils/helper";
-import { Table, Product } from "../ProductList";
+import { ProductList, Product } from "../ProductList";
 
 jest.mock("react-feather", () => ({
   MoreVertical: jest.fn(() => <div>Vertical dot</div>),
@@ -27,9 +27,9 @@ const sampleProductList: Product[] = [
   },
 ];
 
-describe("<Table />", () => {
+describe("<ProductList />", () => {
   it("renders table headers correctly", () => {
-    render(<Table productList={sampleProductList} />);
+    render(<ProductList productList={sampleProductList} />);
     const headers = [
       "Name",
       "Location",
@@ -46,7 +46,7 @@ describe("<Table />", () => {
   });
 
   it("renders table rows correctly", () => {
-    render(<Table productList={sampleProductList} />);
+    render(<ProductList productList={sampleProductList} />);
     sampleProductList.forEach((product) => {
       expect(screen.getByText(product.name)).toBeInTheDocument();
       expect(screen.getByAltText(product.name)).toHaveAttribute(
