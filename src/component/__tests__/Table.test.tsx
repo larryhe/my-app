@@ -1,6 +1,6 @@
 import { render, screen } from "@testing-library/react";
 import { formatDate, formatDollar } from "@/utils/helper";
-import { Table, Product } from "../Table";
+import { Table, Product } from "../ProductList";
 
 jest.mock("react-feather", () => ({
   MoreVertical: jest.fn(() => <div>Vertical dot</div>),

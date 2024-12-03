@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { Table, Product } from "@/component/Table";
+import { ProductList, Product } from "@/component/ProductList";
 import styles from "@/styles/Home.module.css";
 
 export default function Home() {
@@ -17,7 +17,7 @@ export default function Home() {
   return (
     <div className={styles.page}>
       <h1 className={styles.title}>Purchases</h1>
-      <Table productList={list} />
+      <ProductList productList={list} />
     </div>
   );
 }

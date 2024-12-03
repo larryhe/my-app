@@ -1,7 +1,7 @@
 import { formatDate, formatDollar } from "@/utils/helper";
 import { MoreVertical } from "react-feather";
 import { Category, ProductType } from "./Category";
-import styles from "./Table.module.css";
+import styles from "./ProductList.module.css";
 
 export type Product = {
   category: string;
@@ -13,11 +13,11 @@ export type Product = {
   purchaseDate: string;
 };
 
-export type TableProps = {
+export type ProductListProps = {
   productList: Product[];
 };
 
-export function Table({ productList }: TableProps) {
+export function ProductList({ productList }: ProductListProps) {
   return (
     <table className={styles.grid}>
       <thead>
