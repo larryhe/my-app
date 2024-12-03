@@ -10,15 +10,6 @@ export type ProductType =
 
 export type CategoryType = { type: ProductType };
 
-const CLASS = {
-  Food: styles.food,
-  Technology: styles.technology,
-  Entertainment: styles.entertainment,
-  Shopping: styles.shopping,
-  Automotive: styles.automotive,
-  Travel: styles.travel,
-};
-
 export function Category({ type }: CategoryType) {
   console.log(styles);
   return (
