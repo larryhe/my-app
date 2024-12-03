@@ -1,5 +1,5 @@
 import classNames from "classnames";
-import styles from "./category.module.css";
+import styles from "./Category.module.css";
 export type ProductType =
   | "Food"
   | "Technology"
