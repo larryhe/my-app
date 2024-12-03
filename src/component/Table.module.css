@@ -1,0 +1,111 @@
+.grid {
+  border: 1px solid #ccc;
+  border-collapse: collapse;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  table-layout: fixed;
+}
+
+.grid tr {
+  background-color: #f8f8f8;
+  border: 1px solid #ddd;
+  padding: .35em;
+}
+
+.grid th,
+.grid td {
+  padding: .625em;
+  text-align: center;
+}
+
+.grid td img {
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+}
+
+.grid th {
+  font-size: .85em;
+  letter-spacing: .1em;
+}
+
+.price {
+  font-weight: bold;
+}
+
+.date b {
+  display: none;
+}
+
+@media screen and (max-width: 600px) {
+  .grid {
+    border: 0;
+  }
+  
+  .grid thead {
+    border: none;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+  }
+  
+  .grid tr {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    border-radius: .5em;
+    border-bottom: 3px solid #ddd;
+    margin-bottom: .625em;
+  }
+  
+  .grid td {
+    display: block;
+    font-size: .8em;
+  }
+
+  .grid td.name {
+    order: 2;
+    width: 65%;
+    text-align: left;
+    font-weight: bold;
+    padding-left: 1rem;
+  }
+
+  .grid td.icon {
+    order: 1;
+    width: 10%;
+  }
+
+  .grid td.price {
+    order: 3;
+    width: 25%;
+  }
+
+  .grid td.description {
+    order: 4;
+    text-align: left;
+  }
+
+  .grid td.date{
+    order: 5;
+  }
+
+  .grid td.date b{
+    display: block;
+    text-align: left;
+  }
+
+  .grid td.category, .grid td.action{
+    display: none;
+  }
+
+  
+  .grid td:last-child {
+    border-bottom: 0;
+  }
+}

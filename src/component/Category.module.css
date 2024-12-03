@@ -1,0 +1,32 @@
+.category {
+  border: 1px solid #ccc;
+  padding: .25rem 1rem;
+}
+
+.automotive {
+  color: red;
+  border-color: red;
+}
+
+.entertainment {
+  color: blue;
+  border-color: blue;
+}
+
+.shopping {
+  color: green;
+  border-color: green;
+}
+
+.travel {
+  color: orange;
+  border-color: orange;
+}
+
+.food {
+  color: black;
+}
+
+.technology {
+  color: black;
+}
